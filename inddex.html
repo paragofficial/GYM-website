@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARAG FITNESS</title>
+</head>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Roboto+Mono:wght@100&display=swap"
+    rel="stylesheet" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS Reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url("parag.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 14px;
+        top: 20px;
+        margin: 12px auto;
+        text-align: center;
+    }
+
+    .left img {
+        width: 97px;
+        height: 88px;
+        /* filter: invert(100%); */
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 19px;
+        font-size: 20px;
+    }
+
+    .mid {
+        display: block;
+        /* border: 2px solid green; */
+        width: 33%;
+        margin: 12px auto;
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        position: absolute;
+        right: 32px;
+        top: 29px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 17px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 18px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: rgb(142, 142, 211);
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: rgb(53, 180, 60);
+        color: white;
+        padding: 6px 9px;
+        font-size: 20px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(142, 142, 211);
+    }
+
+    .container {
+        /* border: 2px solid green; */
+        margin: 106px 31px;
+        padding: 24px 24px;
+        width: 52%;
+        border-radius: 42px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .formgroup {
+        padding: 2px 2px;
+    }
+
+    .formgroup input {
+        text-align: center;
+        display: block;
+        width: 423px;
+        padding: 1px;
+        border: 2px solid rgb(90, 180, 117);
+        margin: 3px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        /* display: block;
+        width: 180px;
+        margin: 20px auto;
+        background-color: green;
+        border: 2px solid black;
+        border-radius: 13px;
+        height: 37px;
+        font-size: 24px; */
+        display: block;
+        width: 29%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <!-- <img src="pexels-photo-169573.jpeg" alt=""> -->
+            <img src="logo.jpeg" alt="">
+            <!-- <a href="">
+                <img src="https://www.freepik.com/premium-vector/fitness-man-with-strong-muscle-barbell-mascot-logo-concept-fitness-sport-business-design_20295034.htm?query=gym%20logo" alt="">
+            </a> -->
+            <!-- <a href='https://www.freepik.com/vectors/logo'>Logo vector created by freepik - www.freepik.com</a> -->
+            <div>GOLD'S GYM</div>
+        </div>
+        <!-- mid box is for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box is for buttons -->
+        <div class="right">
+            <button class="btn">Call</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best GYM of NAGPUR</h1>
+        <form action="noaction.php"></form>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="formgroup">
+            <input type="number" name="" placeholder="Enter your Age">
+        </div>
+        <div class="formgroup">
+            <input type="email" name="" placeholder="Enter your Email">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter your Address">
+        </div>
+        <div>
+            <button class="btn">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>
